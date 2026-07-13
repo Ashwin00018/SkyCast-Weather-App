@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather APP</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div id="navbar">
+        <nav>
+            <div id="logo-container">
+                <img id="logo-img" src="image.png" alt="Logo">
+                <h1 id="logo-name">SkyCast</h1>
+            </div>
+            <div id="search">
+                <div style="width: 100%; position: relative;">
+                    <input type="text" id="search-bar" placeholder="Enter location" required>
+                    <button id="search-btn">Search</button>
+                    <p id="error-message" class="error-hidden">City is not found</p>
+                </div>
+            </div>
+            <a href="#weather" class="nav-para">Home</a>
+            <a href="#about" class="nav-para">About</a>
+            <a href="#contact-us" class="nav-para">Contact</a>
+
+            <div id="menu">
+                <img id="menu-img" src="menu.png">
+                <ul id="menu-option">
+                    <li><a href="#weather">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact-us">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div id="loading-container" class="loading-container">
+        <div class="loader"></div>
+        <p class="loading-text">Loading Weather...</p>
+    </div>
+
+    <div id="rain-container"></div>
+
+    <div id="weather">
+        <div id="weather-details">
+            <h1 id="city-name">City</h1>
+            <p id="ddym-time">Friday, 27 June 2026 | 10:30 AM</p>
+            <h1 id="degree">35 <sup>o</sup>C</h1>
+            <p id="condition">cloud</p>
+            <img id="weather-icon">
+            <p id="feels-like">Feels like 35 <sup>o</sup>C</p>
+            <div id="aqi">AQI</div>
+        </div>
+    </div>
+
+    <div id="weather-container">
+        <div class="details">
+            <div class="detail-title">
+                <span class="detail-icon">💧</span>
+                <p id="hd">Humidity</p>
+            </div>
+            <p id="percent">62%</p>
+        </div>
+
+        <div class="details">
+            <div class="detail-title">
+                <span class="detail-icon">🌬️</span>
+                <p id="wind-speed">Wind Speed</p>
+            </div>
+            <p id="km">14km/h</p>
+        </div>
+
+        <div class="details">
+            <div class="detail-title">
+                <span class="detail-icon">🧭</span>
+                <p id="pressure">Pressure</p>
+            </div>
+            <p id="hpa">10008 hPa</p>
+        </div>
+
+        <div class="details">
+            <div class="detail-title">
+                <span class="detail-icon">👁️</span>
+                <p id="visibility">Visibility</p>
+            </div>
+            <p id="killometer">8km</p>
+        </div>
+
+         <div class="details">
+            <div class="detail-title">
+                <span class="detail-icon">☀️</span>
+                <p id="uv-index">UV Index</p>
+            </div>
+            <p id="highLow">6(High)</p>
+        </div>
+
+    </div>
+
+    <div id="forecast-section">
+        <div id="today-highlight">
+            <div class="highlight-title">
+                <p>🌄Sunrise</p>
+                <p class="time" id="sunrise">5:24AM</p>
+            </div>
+            <div class="highlight-title">
+                <p>🌅Sunset</p>
+                <p class="time" id="sunset">7:19PM</p>
+            </div>
+        </div>
+
+        <div id="day-forecast">
+            <div class="forecast-header">
+                <h3>Forecast</h3>
+            </div>
+            <div class="forecast-row">
+                <div class="day">
+                    <p class="day-name">Mon</p>
+                    <img class="forecast-icon" alt="Cloudy">
+                    <p class="temp">30<sup>o</sup>C</p>
+                </div>
+                <div class="day">
+                    <p class="day-name">Tue</p>
+                    <img class="forecast-icon" alt="Rainy">
+                    <p class="temp">28<sup>o</sup>C</p>
+                </div>
+                <div class="day">
+                    <p class="day-name">Wed</p>
+                    <img class="forecast-icon" alt="Sunny">
+                    <p class="temp">32<sup>o</sup>C</p>
+                </div>
+                <div class="day">
+                    <p class="day-name">Thu</p>
+                    <img class="forecast-icon" alt="Cloudy">
+                    <p class="temp">29<sup>o</sup>C</p>
+                </div>
+                <div class="day">
+                    <p class="day-name">Fri</p>
+                    <img class="forecast-icon" alt="Rainy">
+                    <p class="temp">27<sup>o</sup>C</p>
+                </div>
+                <div class="day">
+                    <p class="day-name">Sat</p>
+                    <img class="forecast-icon" alt="Rainy">
+                    <p class="temp">28<sup>o</sup>C</p>
+                </div>
+                <div class="day">
+                    <p class="day-name">Sun</p>
+                    <img class="forecast-icon" alt="Rainy">
+                    <p class="temp">27<sup>o</sup>C</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <h2>About SkyCast</h2>
+        <p>SkyCast is a modern weather application that provides real-time weather information for any city using the WeatherAPI. It displays current weather, temperature, humidity, wind speed, pressure, visibility, UV index, sunrise & sunset, and a 7-day weather forecast. The app also features dynamic backgrounds and rain animations that change according to the current weather conditions, creating a more interactive user experience.</p>
+
+        <div class="feature-container">
+            <div class="feature-card">
+                <h3>⛅ Real-time weather</h3>
+            </div>
+            <div class="feature-card">
+                <h3>🗓️ 7-Day Forecast</h3>
+            </div>
+            <div class="feature-card">
+                <h3>🌅 Sunrise & Sunset</h3>
+            </div>
+            <div class="feature-card">
+                <h3>🌧️ Dynamic Background</h3>
+            </div>
+            <div class="feature-card">
+                <h3>📱 Responsive Design</h3>
+            </div>
+            <div class="feature-card">
+                <h3>⚡ WeatherAPI</h3>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact-us">
+        <h2>Contact Us</h2>
+        <p class="contact-text">
+            Have questions or feedback?<br>
+            Feel free to reach out!
+        </p>
+        <div class="contact-card">
+            <h3>Email</h3>
+            <p>raiashwin739@gmail.com</p>
+            <h3>Location</h3>
+            <p>Mumbai,India</p>
+            <h3>Powered By</h3>
+            <p>WeatherAPI.com</p>
+            <div class="social-links">
+                <a href="https://github.com/Ashwin00018">💻 GitHub</a>
+                <a href="https://www.linkedin.com/in/ashwin-rai-099b20316?utm_source=share_via&utm_content=profile&utm_medium=member_android">💼 LinkedIn</a>
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+        <p>&copy; 2026 SkyCast. All Rights Reserved.</p>
+    </footer>
+
+
+    
+    <script src="script.js"></script>
+
+    
+</body>
+</html>
