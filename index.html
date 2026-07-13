@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather APP</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     
 </head>
 <body>
     <div id="navbar">
         <nav>
             <div id="logo-container">
-                <img id="logo-img" src="image.png" alt="Logo">
+                <img id="logo-img" src="images/image.png" alt="Logo">
                 <h1 id="logo-name">SkyCast</h1>
             </div>
             <div id="search">
@@ -26,7 +27,7 @@
             <a href="#contact-us" class="nav-para">Contact</a>
 
             <div id="menu">
-                <img id="menu-img" src="menu.png">
+                <img id="menu-img" src="./images/menu.png">
                 <ul id="menu-option">
                     <li><a href="#weather">Home</a></li>
                     <li><a href="#about">About</a></li>
@@ -58,7 +59,7 @@
     <div id="weather-container">
         <div class="details">
             <div class="detail-title">
-                <span class="detail-icon">💧</span>
+                <span <i class="fa-solid fa-droplet"></i></span>
                 <p id="hd">Humidity</p>
             </div>
             <p id="percent">62%</p>
@@ -66,7 +67,7 @@
 
         <div class="details">
             <div class="detail-title">
-                <span class="detail-icon">🌬️</span>
+                <span <i class="fa-solid fa-wind"></i></span>
                 <p id="wind-speed">Wind Speed</p>
             </div>
             <p id="km">14km/h</p>
@@ -74,7 +75,7 @@
 
         <div class="details">
             <div class="detail-title">
-                <span class="detail-icon">🧭</span>
+                <span <i class="fa-solid fa-gauge-high"></i></span>
                 <p id="pressure">Pressure</p>
             </div>
             <p id="hpa">10008 hPa</p>
@@ -82,7 +83,7 @@
 
         <div class="details">
             <div class="detail-title">
-                <span class="detail-icon">👁️</span>
+                <span <i class="fa-solid fa-eye"></i></span>
                 <p id="visibility">Visibility</p>
             </div>
             <p id="killometer">8km</p>
@@ -90,7 +91,7 @@
 
          <div class="details">
             <div class="detail-title">
-                <span class="detail-icon">☀️</span>
+                <span <i class="fa-solid fa-sun"></i></span>
                 <p id="uv-index">UV Index</p>
             </div>
             <p id="highLow">6(High)</p>
@@ -101,11 +102,11 @@
     <div id="forecast-section">
         <div id="today-highlight">
             <div class="highlight-title">
-                <p>🌄Sunrise</p>
+                <p><i class="fa-solid fa-sun"></i> Sunrise</p>
                 <p class="time" id="sunrise">5:24AM</p>
             </div>
             <div class="highlight-title">
-                <p>🌅Sunset</p>
+                <p><i class="fa-solid fa-moon"></i> Sunset</p>
                 <p class="time" id="sunset">7:19PM</p>
             </div>
         </div>
@@ -159,22 +160,23 @@
 
         <div class="feature-container">
             <div class="feature-card">
-                <h3>⛅ Real-time weather</h3>
+                
+                <h3><i class="fa-solid fa-cloud-sun"></i> Real-time weather</h3>
             </div>
             <div class="feature-card">
-                <h3>🗓️ 7-Day Forecast</h3>
+                <h3><i class="fa-regular fa-calendar-days"></i> 7-Day Forecast</h3>
             </div>
             <div class="feature-card">
-                <h3>🌅 Sunrise & Sunset</h3>
+                <h3><i class="fa-solid fa-cloud-sun"></i> Sunrise & Sunset</h3>
             </div>
             <div class="feature-card">
-                <h3>🌧️ Dynamic Background</h3>
+                <h3><i class="fa-solid fa-cloud-showers-heavy"></i> Dynamic Background</h3>
             </div>
             <div class="feature-card">
-                <h3>📱 Responsive Design</h3>
+                <h3><i class="fa-solid fa-mobile-screen-button"></i> Responsive Design</h3>
             </div>
             <div class="feature-card">
-                <h3>⚡ WeatherAPI</h3>
+                <h3><i class="fa-solid fa-bolt-lightning"></i> WeatherAPI</h3>
             </div>
         </div>
     </div>
@@ -193,8 +195,10 @@
             <h3>Powered By</h3>
             <p>WeatherAPI.com</p>
             <div class="social-links">
-                <a href="https://github.com/Ashwin00018">💻 GitHub</a>
-                <a href="https://www.linkedin.com/in/ashwin-rai-099b20316?utm_source=share_via&utm_content=profile&utm_medium=member_android">💼 LinkedIn</a>
+                <a href="https://github.com/Ashwin00018">
+                    <i class="fa-brands fa-github"></i> GitHub</a>
+                <a href="https://www.linkedin.com/in/ashwin-rai-099b20316?utm_source=share_via&utm_content=profile&utm_medium=member_android">
+                    <i class="fa-brands fa-linkedin"></i> LinkedIn</a>
             </div>
         </div>
     </div>

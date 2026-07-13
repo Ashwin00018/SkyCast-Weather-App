@@ -77,36 +77,36 @@ let changeWeather = (weatherCondition) => {
     rainDrops.forEach(drop => drop.style.display = "none");
     
     if(weatherCondition === "Sunny"){
-        body.style.backgroundImage = "url(bgimg1.jpg)";
+        body.style.backgroundImage = "url(images/bgimg1.jpg)";
     } else if(weatherCondition.toLowerCase().includes("rain")){
-        body.style.backgroundImage = "url(rain.webp)";
+        body.style.backgroundImage = "url(images/rain.webp)";
         rainDrops.forEach(drop => drop.style.display = "block");
     } else if(weatherCondition === "Cloudy"){
-        body.style.backgroundImage = "url(cloudy.jpg)";
+        body.style.backgroundImage = "url(images/cloudy.jpg)";
     } else if(weatherCondition === "Mist"){
-        body.style.backgroundImage = "url(mist.jpg)";
+        body.style.backgroundImage = "url(images/mist1.jpg)";
     } else if (weatherCondition === "Partly cloudy"){
-        body.style.backgroundImage = "url(cloudy.jpg)";
+        body.style.backgroundImage = "url(images/cloudy.jpg)";
     } else if (weatherCondition === "Overcast"){
-        body.style.backgroundImage = "url(overcast.jpg)";
+        body.style.backgroundImage = "url(images/overcast.jpg)";
     } else if (weatherCondition === "Thunderstorm"){
-        body.style.backgroundImage = "url(thunderstorm.jpeg)";
+        body.style.backgroundImage = "url(images/thunderstorm.jpeg)";
     } else if(weatherCondition === "Clear"){
-        body.style.backgroundImage = "url(bgimg1.jpg)";
+        body.style.backgroundImage = "url(images/bgimg1.jpg)";
     } else if(weatherCondition === "Patchy rain nearby"){
-        body.style.backgroundImage = "url(rain.webp)";
+        body.style.backgroundImage = "url(images/rain.webp)";
         rainDrops.forEach(drop => drop.style.display = "block");
     } else if(weatherCondition === "Heavy Rain"){
-        body.style.backgroundImage = "url(rain.webp)";
+        body.style.backgroundImage = "url(images/rain.webp)";
         rainDrops.forEach(drop => drop.style.display = "block");
     } else if(weatherCondition === "Moderate rain"){
-        body.style.backgroundImage = "url(rain.webp)";
+        body.style.backgroundImage = "url(images/rain.webp)";
         rainDrops.forEach(drop => drop.style.display = "block");
     } else if(weatherCondition.includes("Light rain")){
-        body.style.backgroundImage = "url(rain.webp)";
+        body.style.backgroundImage = "url(images/rain.webp)";
         rainDrops.forEach(drop => drop.style.display = "block");
     } else {
-        body.style.backgroundImage = "url(bgimg1.jpg)";
+        body.style.backgroundImage = "url(images/bgimg1.jpg)";
     }
 }
 
