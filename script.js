@@ -226,10 +226,11 @@ navigator.geolocation.getCurrentPosition((position) =>{
     let lat = position.coords.latitude;
     let lon = position.coords.longitude;
     getData(`${lat},${lon}`);
+}
 
-    (error) =>{
+    () =>{
         getData("Mumbai")
     }
-});
+);
 
 
